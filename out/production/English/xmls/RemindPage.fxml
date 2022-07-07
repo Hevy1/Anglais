@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.RemindPageController"
+            prefHeight="800.0" prefWidth="1500.0"
+            fx:id="bPane">
+    <top>
+        <MenuBar prefHeight="30" prefWidth="1500"
+                 xmlns:fx="http://javafx.com/fxml">
+            <Menu text="Options">
+                <MenuItem text="Save" onAction="#save"/>
+                <MenuItem text="Save and Quit" onAction="#saveQuit"/>
+            </Menu>
+            <Menu text = "Favourites mode">
+                <MenuItem fx:id="favMenu" text="Activate favourites" onAction="#favourite"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <bottom>
+        <fx:include source="BarreBas.fxml"/>
+    </bottom>
+    <right>
+        <Pane prefWidth="200"/>
+    </right>
+    <left>
+        <Pane prefWidth="200"/>
+    </left>
+</BorderPane>

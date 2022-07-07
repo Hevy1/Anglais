@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.OrderPageController"
+            prefHeight="800.0" prefWidth="1500.0"
+            fx:id="bPane">
+    <top>
+        <fx:include source="BarreHaut.fxml"/>
+    </top>
+
+    <bottom>
+        <fx:include source="BarreBas.fxml"/>
+    </bottom>
+    <right>
+        <Pane prefWidth="200"/>
+    </right>
+    <left>
+        <Pane prefWidth="200"/>
+    </left>
+</BorderPane>

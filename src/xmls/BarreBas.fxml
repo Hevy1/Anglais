@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      prefHeight="50" prefWidth="1500"
+      fx:controller="controllers.BarreBasController">
+    <Button prefHeight="50" prefWidth="200" text="Home" onAction="#returnHome">
+        <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+        </font>
+        <graphic>
+            <ImageView fitHeight="40" preserveRatio="true" pickOnBounds="true">
+                <Image url="@../../resources/images/back.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</Pane>

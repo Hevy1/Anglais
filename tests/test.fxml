@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="control">
+    <children>
+        <Rectangle fx:id="r1" arcHeight="5.0" arcWidth="5.0"
+                   fill="WHITE" height="152.0" width="52.5"
+                   layoutX="33.0" layoutY="14.0"
+                   onMouseDragOver="#dragOver"
+                   onMouseDragEntered="#trueEntered"
+                   onMouseDragExited="#trueExited"
+                   onMouseReleased="#released"
+                   pickOnBounds="true" stroke="BLACK" strokeType="INSIDE" />
+        <Rectangle fx:id="r2" arcHeight="5.0" arcWidth="5.0"
+                   fill="WHITE" height="152.0" width="52.5"
+                   layoutX="91.0" layoutY="14.0"
+                   onMouseDragOver="#dragOver"
+                   onMouseDragEntered="#trueEntered"
+                   onMouseDragExited="#trueExited"
+                   onMouseDragReleased="#dragReleased"
+                   stroke="BLACK" strokeType="INSIDE" />
+        <Circle fx:id="c1" fill="DODGERBLUE" layoutX="348.0" layoutY="262.0"
+                onDragDetected="#startDrag"
+                onMouseDragged="#mouseDragged"
+                onMouseReleased="#released"
+                radius="54.5" stroke="BLACK" strokeType="INSIDE" />
+        <Circle fx:id="c2" fill="#ff3d00" layoutX="217.0" layoutY="262.0"
+                onDragDetected="#startDrag"
+                onMouseDragged="#mouseDragged"
+                onMouseReleased="#released"
+                radius="54.5" stroke="BLACK" strokeType="INSIDE" />
+    </children>
+</AnchorPane>

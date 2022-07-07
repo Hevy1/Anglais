@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:controller="controllers.BarreHautController"
+         prefHeight="30" prefWidth="1500"
+         xmlns:fx="http://javafx.com/fxml">
+    <Menu text="Options">
+        <MenuItem text="Save" onAction="#save"/>
+        <MenuItem text="Save and Quit" onAction="#saveQuit"/>
+    </Menu>
+</MenuBar>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.RecordPageController"
+            prefHeight="800.0" prefWidth="1500.0"
+            fx:id="bPane">
+    <top>
+        <fx:include source="BarreHaut.fxml"/>
+    </top>
+    <left>
+        <VBox fx:id="info" prefWidth="200" prefHeight="720"/>
+    </left>
+    <bottom>
+        <fx:include source="BarreBas.fxml"/>
+    </bottom>
+</BorderPane>
